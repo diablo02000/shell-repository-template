@@ -21,3 +21,21 @@ Template for Shell repository
 ## Install
 
 ## How to use
+
+## Variables
+
+## Contributing
+
+:sparkles: Thanks for contributing to this project.
+
+I do my best to read and answer to your merges request.
+
+This project use `semantic-release` to generate release.
+The table below shows which commit message gets you which release type:
+
+| Commit message | Release type |
+|:---:|:---:|
+| feat(pencil): Create fatal method. | Feature Release |
+| fix(pencil): Add new line after message. | Fix Release |
+| doc: Update README | README update |
+| break: Update method name | Breaking Release/Major Release |
