@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/diablo02000/shell-repository-template/compare/1.0.0...1.1.0) (2024-02-09)
+
+
+### Features
+
+* Add Test workflow badge ([93da46a](https://github.com/diablo02000/shell-repository-template/commit/93da46ae83b121ef083e692706dc41b6e4150a6c))
+
 # 1.0.0 (2024-02-09)
 
 
