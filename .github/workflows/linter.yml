@@ -7,20 +7,21 @@ on:
       - main
 
 jobs:
-  shfmt:
-    name: runner / shfmt
+  sh-checker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: reviewdog/action-shfmt@v1
-      with:
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run the sh-checker
+        uses: reviewdog/action-shfmt@master
+
 
   shellcheck:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Run Shellcheck
       uses: ludeeus/action-shellcheck@master
       with:
@@ -33,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Run mdl
       uses: actionshub/markdownlint@main
       with:
@@ -46,7 +47,7 @@ jobs:
       - name: Check out code.
         uses: actions/checkout@v4
       - name: misspell
-        uses: reviewdog/action-misspell@v1
+        uses: reviewdog/action-misspell@v1.9.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           locale: "US"
