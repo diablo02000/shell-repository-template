@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/diablo02000/shell-repository-template/compare/1.2.0...1.3.0) (2025-12-02)
+
+
+### Features
+
+* **pre-commit:** Setup pre-commint and install it with mise ([05602e6](https://github.com/diablo02000/shell-repository-template/commit/05602e62b91416db7f62abf42d363608a7290e29))
+
 # [1.2.0](https://github.com/diablo02000/shell-repository-template/compare/1.1.0...1.2.0) (2025-12-02)
 
 
