@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/diablo02000/shell-repository-template/compare/1.3.0...1.4.0) (2025-12-02)
+
+
+### Features
+
+* **lint:** Use markdownlint-cli instead of mdl ([f2e856c](https://github.com/diablo02000/shell-repository-template/commit/f2e856c84c8315e69800595080788743298eaf56))
+
 # [1.3.0](https://github.com/diablo02000/shell-repository-template/compare/1.2.0...1.3.0) (2025-12-02)
 
 
