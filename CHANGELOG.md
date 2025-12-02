@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/diablo02000/shell-repository-template/compare/1.1.0...1.2.0) (2025-12-02)
+
+
+### Features
+
+* **workflow:** Update workflow template and use super-linter ([218ee50](https://github.com/diablo02000/shell-repository-template/commit/218ee5093c778075686f0b36641ae041c5352b18))
+
 # [1.1.0](https://github.com/diablo02000/shell-repository-template/compare/1.0.0...1.1.0) (2024-02-09)
 
 
