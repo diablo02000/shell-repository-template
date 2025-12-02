@@ -10,7 +10,7 @@
 
 ## Description
 
-Short Project description.
+Github repository template for Shell/Bash project.
 
 ## Install
 
