@@ -47,7 +47,7 @@ jobs:
       - name: Check out code.
         uses: actions/checkout@v4
       - name: misspell
-        uses: reviewdog/action-misspell@v1.9.0
+        uses: reviewdog/action-misspell@v1.27.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           locale: "US"
