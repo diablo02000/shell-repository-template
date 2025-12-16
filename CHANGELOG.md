@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/diablo02000/shell-repository-template/compare/1.4.0...1.4.1) (2025-12-16)
+
+
+### Bug Fixes
+
+* **renovate:** Convert Github action semver tags to commit hash ([5db1171](https://github.com/diablo02000/shell-repository-template/commit/5db117131f6ce2de8064adb9fa983d6330d5d8c4))
+
 # [1.4.0](https://github.com/diablo02000/shell-repository-template/compare/1.3.0...1.4.0) (2025-12-02)
 
 
