@@ -6,11 +6,21 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Description](#description)
+- [Install](#install)
+- [How to Use](#how-to-use)
+- [Variables](#variables)
+- [Contributing](#contributing)
+- [Development](#development)
+  - [Setup](#setup)
+- [Examples](#examples)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Description
 
-Github repository template for Shell/Bash project.
+GitHub repository template for Shell/Bash project.
 
 ## Install
 
