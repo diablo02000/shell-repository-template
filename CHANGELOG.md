@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/diablo02000/shell-repository-template/compare/1.4.1...1.4.2) (2025-12-16)
+
+
+### Bug Fixes
+
+* **renovate:** Semver tag version for super-linter ([33a24df](https://github.com/diablo02000/shell-repository-template/commit/33a24dfe6bdcb93e45c401e1b95ccd9573e14ad7))
+
 ## [1.4.1](https://github.com/diablo02000/shell-repository-template/compare/1.4.0...1.4.1) (2025-12-16)
 
 
