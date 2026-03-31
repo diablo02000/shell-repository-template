@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/diablo02000/shell-repository-template/compare/1.4.2...1.4.3) (2026-03-31)
+
+
+### Bug Fixes
+
+* **mise:** code spell error on mise.toml file ([625f09d](https://github.com/diablo02000/shell-repository-template/commit/625f09de2648b61e84eb8f2200047a0b3ea9f880))
+
 ## [1.4.2](https://github.com/diablo02000/shell-repository-template/compare/1.4.1...1.4.2) (2025-12-16)
 
 
