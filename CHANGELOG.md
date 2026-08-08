@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/diablo02000/shell-repository-template/compare/1.5.0...1.5.1) (2026-08-08)
+
+
+### Bug Fixes
+
+* **workflow:** Run linter when push on main ([20e94f6](https://github.com/diablo02000/shell-repository-template/commit/20e94f6cf2ace4842b8c6910411c2a6a76916025))
+
 # [1.5.0](https://github.com/diablo02000/shell-repository-template/compare/1.4.3...1.5.0) (2026-08-08)
 
 
