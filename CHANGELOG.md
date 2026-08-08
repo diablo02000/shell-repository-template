@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/diablo02000/shell-repository-template/compare/1.4.3...1.5.0) (2026-08-08)
+
+
+### Bug Fixes
+
+* **markdownlint:** Move to YAML configuration instead of JSON ([4edb029](https://github.com/diablo02000/shell-repository-template/commit/4edb029814f8762e7f2cec067eebaebda78c6637))
+* **workflow:** Configure superlinter ([4726f8c](https://github.com/diablo02000/shell-repository-template/commit/4726f8cbcae27dc25ad221289bc271587ca27b93))
+
+
+### Features
+
+* **deps:** Update validation/quality step and devlopment environment ([82b0349](https://github.com/diablo02000/shell-repository-template/commit/82b0349eb0b920eb0a77bc0d1da099372162beb7))
+
 ## [1.4.3](https://github.com/diablo02000/shell-repository-template/compare/1.4.2...1.4.3) (2026-03-31)
 
 
