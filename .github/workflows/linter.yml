@@ -4,6 +4,8 @@ name: Linter
 on:
   pull_request:
     branches: [master, main]
+  push:
+    branches: [master, main]
 
 permissions: read-all
 
