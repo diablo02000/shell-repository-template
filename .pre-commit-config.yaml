@@ -18,7 +18,7 @@ repos:
       - id: markdownlint
         name: Lint markdown files
         files: \.md$
-        args: [--config=markdownlint.rb, --ignore-path=.markdownlintignore]
+        args: [--ignore-path=.markdownlintignore]
 
   # YAML validation (for copier.yml, workflows, etc.)
   - repo: https://github.com/pre-commit/pre-commit-hooks
