@@ -25,8 +25,8 @@ All pull requests are reviewed as soon as possible.
 This project uses conventional commits for automated releases. Please follow these commit message conventions:
 
 | Commit Message Example | Release Type |
-|---|---|
+| --- | --- |
 | `feat(pencil): Add fatal method` | Feature Release |
-| `fix(pencil): Add newline after message Bug` | Bug Fix Release |
+| `fix(pencil): Add newline after message Bug` | Bugfix Release |
 | `doc: Update readme` | Documentation Update |
 | `break: Rename method` | Breaking/Major Release |

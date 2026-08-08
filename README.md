@@ -40,7 +40,7 @@
 ## Features
 
 | Feature | Benefit |
-|---------|---------|
+| --------- | --------- |
 | **Mise Integration** | Automatic tool version management (bats, shellcheck, shfmt) |
 | **Bats Testing** | Robust testing framework with support/assert libraries |
 | **Pre-commit Hooks** | Automatic code quality checks before commits |
@@ -109,7 +109,7 @@ my-shell-project/
 ### Available Variables
 
 | Variable | Description | Default |
-|----------|-------------|---------|
+| ---------- | ------------- | --------- |
 | `project_name` | Project name | my-bash-project |
 | `project_description` | Project description | "" |
 | `author_name` | Author name | Your Name |
@@ -144,7 +144,7 @@ mise install
 ### Available Tasks
 
 | Command | Description |
-|---------|-------------|
+| --------- | ------------- |
 | `mise run test` | Run all bats tests |
 | `mise run lint` | Run shellcheck and shfmt |
 | `mise run setup` | Install pre-commit hooks |
