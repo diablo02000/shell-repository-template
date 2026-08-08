@@ -2,7 +2,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/diablo02000/shell-repository-template-local?style=social)](https://github.com/diablo02000/shell-repository-template-local/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Actions](https://github.com/diablo02000/shell-repository-template-local/actions/workflows/linter.yml/badge.svg)](https://github.com/diablo02000/shell-repository-template-local/actions/workflows/linter.yml)
+[![GitHub Actions](https://github.com/diablo02000/shell-repository-template/actions/workflows/linter.yml/badge.svg)](https://github.com/diablo02000/shell-repository-template-local/actions/workflows/linter.yml)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
