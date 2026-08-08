@@ -1,0 +1,115 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+# Optimized pre-commit configuration for shell script projects
+repos:
+  # Shell script analysis and formatting
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 3.0.1
+    hooks:
+      - id: shellcheck
+        name: shellcheck
+        description: Static analysis for shell scripts
+        files: \.(sh|bash|bats)$
+        args: [--severity=error]
+
+      - id: shfmt
+        name: shfmt
+        description: Format shell scripts
+        files: \.(sh|bash|bats)$
+        args: [-i=2, -bn, -ci]
+
+  # Ensure scripts are executable and have proper shebangs
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-executables-have-shebangs
+        name: Check executables have shebangs
+        files: ^(script\.sh|src/.*\.sh|bin/.*\.sh)$
+
+      - id: check-shebang-scripts-are-executable
+        name: Check shebang scripts are executable
+        files: \.(sh|bash|bats)$
+
+  # Run bats tests on pre-push
+  - repo: local
+    hooks:
+      - id: bats-tests
+        name: Run bats tests
+        entry: mise run test
+        language: system
+        pass_filenames: false
+        stages: [pre-push]
+
+  # Documentation formatting
+  - repo: https://github.com/thlorenz/doctoc
+    rev: v2.3.0
+    hooks:
+      - id: doctoc
+        name: Update TOC in markdown
+        files: (README|CONTRIBUTING|CHANGELOG)\.md$
+        args: [--title="**Table of Contents**", --maxlevel=3]
+
+  # Markdown linting with official CLI
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.42.0
+    hooks:
+      - id: markdownlint
+        name: Lint markdown files
+        files: \.md$
+        args: [--ignore-path=.markdownlintignore]
+
+  # Security: Detect secrets and hardcoded credentials
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.2
+    hooks:
+      - id: gitleaks
+        name: Detect secrets
+        description: Prevent hardcoded credentials
+        args: [ --staged, --verbose]
+
+  # Spelling checker
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        name: Check spelling
+        files: \.(md|txt|sh|bash)$
+        args: [--ignore-words=.codespellignore, --skip="CHANGELOG.md,\*.lock"]
+
+  # GitHub Actions linting (only runs if workflow files exist)
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.9
+    hooks:
+      - id: actionlint
+        name: Lint GitHub Actions
+        files: \.github/workflows/.*\.ya?ml$
+        pass_filenames: true
+
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+        files: \.(sh|md|txt|yaml|yml|json)$
+        args: [--markdown-linebreak-ext=md]
+
+      - id: end-of-file-fixer
+        name: Ensure files end with newline
+        files: \.(sh|md|txt|yaml|yml|json)$
+
+      - id: check-yaml
+        name: Validate YAML files
+        files: \.(yaml|yml)$
+
+      - id: check-added-large-files
+        name: Prevent large files
+        args: [--maxkb=500]
+
+  # Commit message validation with conventional commits
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.10.0
+    hooks:
+      - id: commitizen
+        name: Check commit message
+        stages: [commit-msg]

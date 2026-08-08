@@ -1,0 +1,22 @@
+[tools]
+prek = "latest"
+bats = "latest"
+
+[tasks.bats_helper]
+description = "Download required bats extended libraries"
+run = [
+  "git clone --depth 1 https://github.com/bats-core/bats-support.git tests/test_helper/bats-support 2>/dev/null || git -C tests/test_helper/bats-support pull --depth 1 2>/dev/null || true",
+  "git clone --depth 1 https://github.com/bats-core/bats-assert.git tests/test_helper/bats-assert 2>/dev/null || git -C tests/test_helper/bats-assert pull --depth 1 2>/dev/null || true"
+]
+
+[tasks.clean_bats_helper]
+description = "Delete required bats extended libraries"
+run = [
+  "rm -rf tests/test_helper/bats-support",
+  "rm -rf tests/test_helper/bats-assert"
+]
+
+[tasks.test]
+description = "Run automated tests"
+depends = ["bats_helper"]
+run = "bats tests/"
