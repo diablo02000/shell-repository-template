@@ -56,7 +56,7 @@ repos:
       - id: markdownlint
         name: Lint markdown files
         files: \.md$
-        args: [--config=.markdownlint.json, --ignore-path=.markdownlintignore]
+        args: [--ignore-path=.markdownlintignore]
 
   # Security: Detect secrets and hardcoded credentials
   - repo: https://github.com/gitleaks/gitleaks
